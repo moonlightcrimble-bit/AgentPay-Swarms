@@ -3,7 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AgentPay — Hold $AGENTPAY, earn $USDC</title>
+<title>AGENTPLAY</title>
+
+ <link rel="icon" type="image/png" href="agentpay.png">
+
+
+ 
 <meta name="description" content="A fixed share of every $AGENTPAY trade is converted to $USDC and streamed to holders' Solana wallets — automatically, on-chain, forever.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -737,10 +742,11 @@
     z-index: 1;
     background: rgba(255,0,0,0.08);
     border-top: 1px solid rgba(255,0,0,0.3);
-    padding: 1rem 4rem;
+    padding: 0.75rem 2rem;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 0.75rem;
+    justify-content: center;
   }
 
   .ca-label {
@@ -757,10 +763,10 @@
     font-size: 12px;
     color: var(--gray-300);
     letter-spacing: 1px;
-    flex: 1;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    max-width: 500px;
   }
 
   .ca-copy {
@@ -969,7 +975,7 @@
 </nav>
 
 <!-- CA BANNER -->
-<div class="ca-banner" style="position:relative;z-index:10;margin-top:64px;">
+<div class="ca-banner" style="margin-top:64px;">
   <span class="ca-label">$AGENTPAY CA</span>
   <span class="ca-address" id="ca-addr">Coming soon — contract address will appear here at launch</span>
   <button class="ca-copy" onclick="copyCA()">Copy</button>
